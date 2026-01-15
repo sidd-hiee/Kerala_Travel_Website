@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan Your trip | Kerala Trails</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<style>
+/* ===== FLEX LAYOUT ===== */
+.container{
+    width: 90%;
+    margin: 120px auto;
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+}
+
+/* columns */
+.why,
+.form-box,
+.reviews{
+    border-radius: 30px;
+}
+
+/* side columns */
+.why,
+.reviews{
+    height: 800px;
+    flex: 1;
+    background-color: #283a2f;
+    padding: 60px;
+    color: antiquewhite;
+    box-shadow: 0px 0px 16px rgb(221, 229, 160);
+}
+
+/* center */
+.form-box{
+    flex: 2;
+    background-image: url("https://cdn11.bigcommerce.com/s-hv21hhsv/images/stencil/700x700/products/26368/167405/8584_74_01_F__11507.1626778777.jpg?c=2");
+    padding: 80px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    opacity: 90%;
+}
+
+/* ===== TEXT ===== */
+h1{
+    text-align: center;
+    color: oldlace;
+    margin-bottom: 30px;
+    font-size: 80px;
+    font-family: "Playfair Display", serif;
+}
+
+.list{
+    font-size: 35px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+
+/* ===== FORM ===== */
+label{
+    display: block;
+    margin-top: 18px;
+    font-size: 35px;
+    color: bisque;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #e6de94;
+}
+
+button{
+    margin-top: 30px;
+    width: 100%;
+    padding: 16px;
+    font-size: 20px;
+    background: #e6de94;
+    color: rgb(22, 48, 23);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #cf9011;
+}
+
+/* ===== REVIEWS ===== */
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review-card{
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== HEADER (UNCHANGED) ===== -->
+<nav>
+    <div class="title">
+        <div class="logo">
+            <a href="./home.html">
+                <img src="https://marketplace.canva.com/HVPq4/MAG7xLHVPq4/1/tl/canva-illustration-of-palm-tree-MAG7xLHVPq4.png">
+            </a>
+        </div>
+        <div class="Name">
+            <a href="./home.html">Kerala Trails</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <a href="./home.html">Home</a>
+        <a href="./tours.html">Tours</a>
+        <a href="./PlanYours.html">Plan Yours</a>
+        <a href="./Explore.html">Explore</a>
+        <a href="./AboutUs.html">About Us</a>
+        <a href="./Contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- ===== MAIN FLEX SECTION ===== -->
+<div class="container">
+
+    <!-- WHY US -->
+    <div class="why">
+        <h1>Why Choose Us?</h1>
+        <ul class="list">
+            <li>Handcrafted itineraries by local Kerala experts</li>
+            <li>Transparent & honest pricing</li>
+            <li>Verified hotels & stays</li>
+            <li>24×7 travel support</li>
+            <li>Authentic Kerala experiences</li>
+        </ul>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-box">
+        <h1>Plan Your Dream Trip</h1>
+        <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+        
+        <label>City and State</label>
+        <input type="text" placeholder="your city and state" required>
+
+        <label>Select Package</label>
+        <select required>
+            <option value="">Choose a package</option>
+            <option>Classic Kerala</option>
+            <option>Backwaters & Beaches</option>
+            <option>Hill Stations & Nature Retreat</option>
+            <option>Budget Kerala Explorer</option>
+            <option>All-Out Kerala Experience</option>
+            <option>Custom Trip</option>
+        </select>
+
+        <label>Destinations</label>
+        <input type="text" placeholder="Enter the places you want to explore">
+
+        <label>Travel Start Date</label>
+        <input type="date" required>
+
+        <label>Travel End Date</label>
+        <input type="date" required>
+
+
+        <label>Number of Travellers</label>
+        <input type="number" min="1" placeholder="1,2,3" required>
+
+        <label>No. of Rooms</label>
+        <input type="number" placeholder="1,2,3..">
+
+        <label>Stay Preference</label>
+        <input type="text" placeholder="what kind of stay do you wish for?">
+
+
+
+<label>Meal Preference</label>
+<select name="meals" id="">
+    <option value="">Choose your Meal</option>
+    <option value="">Veg</option>
+    <option value="">Non-Veg</option>
+    <option value="">Both</option>
+</select>
+
+<label>Budget</label>
+<input type="number" name="" id="">
+
+
+
+        <label>Additional Requests</label>
+        <textarea rows="4" placeholder="Any custom requirements..."></textarea>
+
+        <button type="submit">Confirm Booking</button>
+
+    </form>
+    </div>
+
+    <!-- REVIEWS -->
+    <div class="reviews">
+        <h1>Reviews</h1>
+        <div class="review-card">⭐⭐⭐⭐⭐ Amazing planning</div>
+        <div class="review-card">⭐⭐⭐⭐⭐ Smooth experience</div>
+        <div class="review-card">⭐⭐⭐⭐⭐ Loved every moment</div>
+    </div>
+
+</div>
+
+<!-- ===== FOOTER (UNCHANGED) ===== -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h2>Kerala Trails</h2>
+            <p>Explore God’s Own Country with us.</p>
+            <a href="#" class="cta-btn">Plan Your Trip</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>📍 Kerala, India</p>
+            <p>📞 +91 9***5 4***0</p>
+            <p>📧 info@keralatrails.com</p>
+        </div>
+
+        <div class="footer-socials">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Kerala Trails. All Rights Reserved.
+    </div>
+</footer>
+
+</body>
+</html>

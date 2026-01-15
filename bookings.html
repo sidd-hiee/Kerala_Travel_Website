@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip | Kerala Trails</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        
+        .form-box{
+            max-width: 1500px;
+            margin: 60px auto;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FRmnpCMOCeESQ4WSOGRXNGseGsQkfEEF8w&s");
+            padding: 100px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            opacity: 90%;
+        }
+
+        h1{
+            text-align: center;
+            color: #eeec97;
+            margin-bottom: 30px;
+            font-size: 70px;
+        font-family: "Playfair Display", serif;
+        font-weight: 800;         
+            }
+
+        label{
+            display: block;
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 14px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: 1px solid #e6de94;
+            font-size: 16px;
+        }
+
+        button{
+            margin-top: 30px;
+            width: 100%;
+            padding: 16px;
+            font-size: 20px;
+            background: #e6de94;
+            color: rgb(22, 48, 23);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #cf9011;
+        }
+
+        .star-rating{
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.star-rating input{
+    display: none;
+}
+
+.star-rating label{
+    font-size: 42px;
+    color: #ccc;              /* blank stars */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* Hover fills stars */
+.star-rating label:hover,
+.star-rating label:hover ~ label{
+    color: #f5b301;
+}
+
+
+    </style>
+</head>
+<body>
+     <nav>
+        <div class="title">
+            <div class="logo">
+                <a href="./home.html">
+                    <img src="https://marketplace.canva.com/HVPq4/MAG7xLHVPq4/1/tl/canva-illustration-of-palm-tree-MAG7xLHVPq4.png" alt="">
+                </a>
+            </div>
+            <div class="Name">
+                <a href="./home.html">Kerala Trails</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="./home.html">Home</a>
+            <a href="./tours.html">Tours</a>
+            <a href="./PlanYours.html">Plan Yours</a>
+            <a href="./Explore.html">Explore</a>
+            <a href="./AboutUs.html">About Us</a>
+            <a href="./Contact.html">Contact</a>
+        </div>
+    </nav>
+
+<div class="form-box">
+    <h1>Book Your Kerala Trip 🌴</h1>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="your@email.com" required>
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="+91 XXXXX XXXXX" required>
+        
+        <label>City and State</label>
+        <input type="text" placeholder="your city and state" required>
+
+        <label>Select Package</label>
+        <select required>
+            <option value="">Choose a package</option>
+            <option>Classic Kerala</option>
+            <option>Backwaters & Beaches</option>
+            <option>Hill Stations & Nature Retreat</option>
+            <option>Budget Kerala Explorer</option>
+            <option>All-Out Kerala Experience</option>
+            <option>Custom Trip</option>
+        </select>
+
+        <label>Travel Date</label>
+        <input type="date" required>
+
+
+        <label>Number of Travellers</label>
+        <input type="number" min="1" placeholder="1,2,3" required>
+
+        <label>No. of Rooms</label>
+        <input type="number" placeholder="1,2,3..">
+
+        <label>Hotel Category</label>
+
+<div class="star-rating">
+    <input type="radio" name="hotel_star">
+    <label for="star1">★</label>
+
+    <input type="radio" name="hotel_star">
+    <label for="star2">★</label>
+
+    <input type="radio" name="hotel_star">
+    <label for="star3">★</label>
+
+    <input type="radio" name="hotel_star">
+    <label for="star4">★</label>
+
+    <input type="radio" name="hotel_star" >
+    <label for="star5">★</label>
+</div>
+
+<label>Meal Preference</label>
+<select name="meals" id="">
+    <option value="">Choose your Meal</option>
+    <option value="">Veg</option>
+    <option value="">Non-Veg</option>
+    <option value="">Both</option>
+</select>
+
+
+
+        <label>Additional Requests</label>
+        <textarea rows="4" placeholder="Any custom requirements..."></textarea>
+
+        <button type="submit">Confirm Booking</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <!-- BRAND + CTA -->
+        <div class="footer-brand">
+            <h2>Kerala Trails</h2>
+            <p>Explore God’s Own Country with us.</p>
+            <a href="#" class="cta-btn">Plan Your Trip</a>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>📍 Kerala, India</p>
+            <p>📞 +91 9***5 4***0</p>
+            <p>📧 info@keralatrails.com</p>
+        </div>
+
+        <!-- SOCIALS -->
+        <div class="footer-socials">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours | Kerala Trails</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+         .banner{
+            width: min(90%, 1100px);
+            margin: 60px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+            padding: 80px 0px;
+            background-color: #283a2f;
+            width: 50%;
+        padding: 90px;
+        justify-content: center;
+        border-radius: 50px;
+        box-shadow: 10px 0px 20px rgb(69, 90, 73);
+         }
+
+         h1{
+            font-size: 115px;
+            color: antiquewhite;
+         }
+         h2{
+            font-size: 60px;
+            color: antiquewhite;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0px auto;
+         }
+
+         .GOC{
+            font-size: 40px;
+            color: antiquewhite;
+         }
+
+         .banner:hover{
+            transform: scale(1.03);
+            
+         }
+
+        .Brochure{
+            height: 80px;
+            width: 210px;
+            border-radius: 15px;
+            background-color: oldlace;
+            color: #283a2f;
+            font-size: 30px;
+        }
+        .Brochure:hover {
+            transform: scale(1.1);
+            cursor: pointer;
+            box-shadow: 0px 0px 19px rgb(223, 215, 177);
+        }
+
+        .cards{
+            width: 85%;
+            margin: 80px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+        }
+
+        .C{
+            background-color: oldlace;
+            border-radius: 22px;
+            padding: 35px 30px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+            position: relative;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 55px;
+}
+
+        h3{
+            font-size: 60px;
+            font-weight: 600;
+            color: #345540;
+            text-align: center;
+            padding: 20px;
+        }
+        .duration{
+            font-size: 47px;
+        }
+        .places{
+            font-size: 38px;
+        }
+        .highlights{
+            font-size: 40px;
+            color: #345540;
+            text-align: center;
+        }
+        .price{
+            font-size: 50px;
+        }
+        
+        .BN{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70px;
+    width: 200px;
+
+    background-color: #283a2f;
+    color: oldlace;
+
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;   /* 🔥 removes link look */
+    border-radius: 14px;
+
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+        .BN:hover{
+    background-color: #345540;
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(40, 80, 55, 0.35);
+}
+
+    @media (max-width: 900px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="title">
+            <div class="logo">
+                <a href="./home.html">
+                    <img src="https://marketplace.canva.com/HVPq4/MAG7xLHVPq4/1/tl/canva-illustration-of-palm-tree-MAG7xLHVPq4.png" alt="">
+                </a>
+            </div>
+            <div class="Name">
+                <a href="./home.html">Kerala Trails</a>
+            </div>
+        </div>
+
+        <div class="menu">
+            <a href="./home.html">Home</a>
+            <a href="./tours.html">Tours</a>
+            <a href="./PlanYours.html">Plan Yours</a>
+            <a href="./Explore.html">Explore</a>
+            <a href="./AboutUs.html">About Us</a>
+            <a href="./Contact.html">Contact</a>
+        </div>
+    </nav>
+
+   <div class="banner">
+    <h1>Discover kerala</h1>
+    <h2>God’s Own Country</h2>
+    <p class="GOC">Explore the timeless charm of Kerala with our diverse tours—each a unique journey through serene backwaters, misty hill stations, and sun-washed beaches. Immerse yourself in the soul of God’s Own Country, where rich culture, lush landscapes, and tranquil experiences come together to create unforgettable memories<p>
+        <button class="Brochure">
+             <a href="./Explore.html"></a>Brochure</button>
+   </div>
+
+   <div class="cards">
+    <div class="C card1">
+        <h3>Classic Kerala</h3>
+        <p class="duration"> 5-7 Days</p>
+        <p class="places">Kochi • Munnar • Alleppey • Thekkady</p>
+        <p class="highlights">Backwaters, tea gardens, wildlife & culture</p>
+        <p class="price">₹28,000 – ₹45,000 / person </p>
+        <a href="bookings.html" class="BN">Book Now!</a>
+
+        
+    </div>
+    <div class="C card2">
+        <h3>Backwaters and Beaches</h3>
+        <p class="duration"> 5-7 Days</p>
+        <p class="places">Alleppey • Kumarakom • Varkala / Kovalam</p>
+        <p class="highlights">Houseboat cruise, beach resort stay, transfers</p>
+        <p class="price">₹25,000 – ₹40,000 / person </p>
+        <a href="bookings.html" class="BN">Book Now!</a>
+
+        
+
+    </div>
+    <div class="C card3">
+        <h3>Hill Stations & Nature Retreat</h3>
+        <p class="duration"> 3–5 Days</p>
+        <p class="places">Munnar • Wayanad</p>
+        <p class="highlights">Hill-view hotels, sightseeing, local trave</p>
+        <p class="price">₹20,000 – ₹35,000 / person </p>
+        <a href="bookings.html" class="BN">Book Now!</a>
+
+        
+    </div>
+    <div class="C card4">
+        <h3>Budget Kerala Explorer (Inclusive)</h3>
+        <p class="duration"> 4-6 Days</p>
+        <p class="places">Kochi • Munnar • Alleppey</p>
+        <p class="highlights">Budget stays, shared houseboat, transport, major attractions</p>
+        <p class="price">₹15,000 – ₹25,000 / person </p>
+        <a href="bookings.html" class="BN">Book Now!</a>
+
+        
+    </div>
+    <div class="C card5">
+        <h3>All-Out Kerala Experience (Premium)</h3>
+        <p class="duration"> 7–10 Days</p>
+        <p class="places">Kochi • Munnar • Wayanad • Alleppey • Kovalam</p>
+        <p class="highlights">Luxury resorts, private houseboat, chauffeur-driven car, curated activities</p>
+        <p class="price">₹60,000 – ₹1,20,000 / person </p>
+        <a href="bookings.html" class="BN">Book Now!</a>
+
+        
+    </div>
+    <div class="C card6">
+        <h3>Build your own Experiences (Customise your tour)</h3>
+        <p class="duration"> customise durations</p>
+        <p class="places"> • Add your own destinations </p>
+        <p class="highlights">Create your own memories</p>
+        <p class="price">Monitor your spendings </p>
+        <a href="PlanYours.html" class="BN">Plan Yours</a>
+
+        
+    </div>
+
+   </div>
+
+
+    <footer class="footer">
+    <div class="footer-content">
+
+        <!-- BRAND + CTA -->
+        <div class="footer-brand">
+            <h2>Kerala Trails</h2>
+            <p>Explore God’s Own Country with us.</p>
+            <a href="#" class="cta-btn">Plan Your Trip</a>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>📍 Kerala, India</p>
+            <p>📞 +91 9***5 4***0</p>
+            <p>📧 info@keralatrails.com</p>
+        </div>
+
+        <!-- SOCIALS -->
+        <div class="footer-socials">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        © 2026 Kerala Trails. All Rights Reserved.
+    </div>
+</footer>
+    
+</body>
+</html>
